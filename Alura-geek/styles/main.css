@@ -1,0 +1,61 @@
+@import url("/styles/reset.css");
+@import url("/styles/header.css");
+@import url("/styles/produtos.css");
+@import url("/styles/fomulario.css");
+@import url("/styles/footer.css");
+@import url("/styles/modal.css");
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+
+*{
+    margin: 0%;
+    padding: 0%;
+    } 
+    
+    :root{
+        --cor-principal: #102820;
+        --cor-secundaria: #486939;
+        --cor-clara: #FFF9E0;
+        --cor-escura: #000000;
+        --cor-branco: #ffff;
+    }
+    
+    
+    body{
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        background-color: var(--cor-branco);
+        line-height: 1;
+        color: var(--cor-escura);
+        overflow-x: hidden;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10rem;
+        padding-top: 2rem;
+        gap: 2rem;
+    }
+
+    @media(width <= 864px){
+        
+        main{
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+            }
+
+    }
+
+    @media(width <= 430px) {
+
+        main{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        }
+    }
+
+  
